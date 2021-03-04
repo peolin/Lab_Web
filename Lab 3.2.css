@@ -1,0 +1,36 @@
+#firstP {
+    color: rgb(0, 20, 99);
+    font: normal, bolder, 20px, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(47, 201, 108);
+    text-shadow: black;
+}
+
+H1 {
+    color: rgb(3, 10, 32);
+    font: italic, 24px, monospace;
+    text-align: center;
+}
+
+UL,
+LI {
+    color: rgb(184, 184, 212);
+    font: italic, bold, 30px, Arial;
+    text-decoration: overline;
+    text-decoration-color: rgb(47, 201, 108);
+    text-align: justify;
+    background: linear-gradient(rgb(9, 50, 39), blue);
+}
+
+P,
+I {
+    color: blue;
+    font: normal, bolder, 24px, sans-serif;
+    background-image: url("ombre.jpg");
+}
+
+H2 {
+    color: rgb(9, 2, 39);
+    font: normal, helvetica;
+}
