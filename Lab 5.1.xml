@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="Lab 5.1.css"?>
+<!DOCTYPE studentID [
+<!ELEMENT studentID (university,ID,from,to,initials,faculty,group)>
+<!ELEMENT university (#PCDATA)>
+<!ELEMENT ID (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT initials (#PCDATA)>
+<!ELEMENT faculty (#PCDATA)>
+<!ELEMENT group (#PCDATA)>
+]>
+
+<studentID>
+    <university> Національний авіаційний університет </university>
+    <ID> КВ №12356789 </ID>
+    <from> 1 вересня 2018 р. </from>
+    <to> 30 червня 2022 р. </to>
+    <initials> Свідло Єлизавета Костянтинівна </initials>
+    <faculty> Навчально-науковий інтситут комп'ютерних інформаційних технологій </faculty>
+    <group> ПІ-321 </group>
+</studentID>

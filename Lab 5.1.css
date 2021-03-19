@@ -1,0 +1,28 @@
+studentID
+{
+    background: url("nau.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 200%;
+}
+university, faculty
+{
+    font: bold, helvetica;
+    text: underline, center;
+    color: rgb (0, 20, 99);
+}
+ID, group
+{
+    font: bolder;
+    color: rgb(20, 20, 99);
+}
+from, to
+{
+    font: sans;
+    text-decoration: underline;
+}
+initials
+{
+    font: helvetica;
+    color: blue;
+}
