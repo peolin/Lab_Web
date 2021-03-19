@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <studentID>
+        <university> Національний авіаційний університет </university>
+        <ID> КВ №12356789 </ID>
+        <from> 1 вересня 2018 р. </from>
+        <to> 30 червня 2022 р. </to>
+        <initials> Свідло Єлизавета Костянтинівна </initials>
+        <faculty> Навчально-науковий інтситут комп'ютерних інформаційних технологій </faculty>
+        <group> ПІ-321 </group>
+    </studentID>
+
+    <studentID>
+        <university> Києво-могилянська академія </university>
+        <ID> КВ №12356789 </ID>
+        <from> 1 вересня 2018 р. </from>
+        <to> 30 червня 2022 р. </to>
+        <initials> Василенко Сергій Іванович </initials>
+        <faculty> Факультет лінгвістики та соціології </faculty>
+        <group> УС-12 </group>
+    <studentID>
+
+    <studentID>
+        <university> Києвський національний університет ім. Т.Г. Шевченка </university>
+        <ID> КВ №12356789 </ID>
+        <from> 1 вересня 2019 р. </from>
+        <to> 30 червня 2023 р. </to>
+        <initials> Ткаченко Софія Петрівна </initials>
+        <faculty> Юридичний факультет </faculty>
+        <group> ЮІ-125 </group>
+    </studentID>
+</students>
