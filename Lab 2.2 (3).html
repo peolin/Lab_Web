@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<HTML lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+    <META charset="utf-8" />
+    <TITLE> Lab 2.2 </TITLE>
+</HEAD>
+<BODY onload="Question();">
+    <SCRIPT src="Lab 2.2 (3).js"></SCRIPT>
+    <P><INPUT type="button" value="Enter data" onclick="Ask()"> </P>
+    <P> <INPUT type="button" value="Test question" onclick="Test()"> </P>
+    <p id="Timer"> Timer </p>
+
+    <SCRIPT> 
+        function Test() {
+            var i = 0
+            while (i < 4) {
+                answ[i] = confirm(qs[i]);
+                function startTimer(duration, display) {
+                    var timer = duration, seconds;
+                    setInterval(function () {
+                        seconds = parseInt(timer % 60, 10);
+
+                        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                        display.textContent = seconds + 's';
+
+                        if (--timer < 0) {
+                            clearInterval(timer);
+                            document.getElementById("Timer").innerHTML = "EXPIRED";
+                        }
+                    }, 1000);
+                }
+
+                window.onload = function () {
+                    var minute = 60,
+                        display = document.getElementById("Timer").innerHTML();
+                    startTimer(minute, display);
+                }
+                i++;
+            };
+        }
+    </SCRIPT>
+    <P> <INPUT type="button" value="Result" onclick="Count()"> </P>
+</BODY>
+</HTML>
