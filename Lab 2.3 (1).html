@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Lab 2.3 </title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 3px;
+            text-align: center;
+        }
+
+        th {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="calendar"></div>
+    <script>
+        alert("Please, enter required data.");
+        let y = prompt("Please, enter a year.", '');
+        let m = prompt("Please, enter a month number.", '');
+
+        function createCalendar(elem, year, month) {
+            let mon = month - 1;
+            let d = new Date(year, mon);
+            // нова таблиця
+            let monthNames = ["January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
+
+            let table = '<table> <tr>' + monthNames[d.getMonth()] + ' ' + '</tr>' + '<tr> MONTHLY CALENDAR </tr> <tr> <th BGCOLOR="#E6E6E6">MO</th> <th BGCOLOR="#E6E6E6">TU</th> <th BGCOLOR="#E6E6E6">WE</th> <th BGCOLOR="#E6E6E6">TH</th> <th BGCOLOR="#E6E6E6">FR</th> <th BGCOLOR = "BLUE" >SA</th> <th BGCOLOR="BLUE">SU</th> </tr> <tr>'
+
+            // створення першого рядку з понеділка для початку місяця
+            for (let i = 0; i < getDay(d); i++) { 
+                table += '<td></td>';
+            }
+
+            while (d.getMonth() == mon) {
+                table += '<td>' + d.getDate() + '</td>';
+
+                if (getDay(d) % 7 == 6) { // перехід на новий рядок після неділі
+                    table += '</tr><tr>';
+                }
+
+                d.setDate(d.getDate() + 1);
+            }
+
+            // створення останнього рядку для останніх днів місяця
+            if (getDay(d) != 0) {
+                for (let i = getDay(d); i < 7; i++) {
+                    table += '<td></td>';
+                }
+            }
+
+            table += '</tr></table>';
+
+            elem.innerHTML = table;
+        }
+
+        function getDay(date) { // отримуємо дату дня від 0 (понеділок) до 6 (неділя)
+            let day = date.getDay();
+            if (day == 0) day = 7; // робимо неділю (0) останнім днем
+            return day - 1;
+        }
+        createCalendar(calendar, y, m);
+    </script>
+
+</body>
+</html>
